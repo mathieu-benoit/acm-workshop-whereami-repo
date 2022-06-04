@@ -5,6 +5,7 @@ resources:
 - virtualservice.yaml
 - networkpolicy_denyall.yaml
 - networkpolicy_whereami.yaml
+- authorizationpolicy_whereami.yaml
 configMapGenerator:
 - behavior: merge
   literals:
