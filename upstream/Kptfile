@@ -1,0 +1,18 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata:
+  name: k8s
+upstream:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/kubernetes-engine-samples
+    directory: /whereami/k8s
+    ref: main
+  updateStrategy: resource-merge
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/GoogleCloudPlatform/kubernetes-engine-samples
+    directory: /whereami/k8s
+    ref: main
+    commit: 888f33e05de976b57f4c58229d48144aa51b8b68
