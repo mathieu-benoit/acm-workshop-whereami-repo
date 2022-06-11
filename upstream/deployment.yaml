@@ -31,7 +31,7 @@ spec:
       serviceAccountName: whereami-ksa
       containers:
       - name: whereami
-        image: us-east4-docker.pkg.dev/acm-workshop-742-tenant/containers/whereami:v1.2.8
+        image: push us-east4-docker.pkg.dev/acm-workshop-742-tenant/containers/whereami:test
         ports:
         - name: http
           containerPort: 8080
