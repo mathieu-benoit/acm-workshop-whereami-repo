@@ -20,7 +20,7 @@ metadata: # kpt-merge: /whereami
     app: whereami
   name: whereami
 spec:
-  replicas: 0
+  replicas: 3
   selector:
     matchLabels:
       app: whereami
